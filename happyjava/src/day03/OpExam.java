@@ -37,5 +37,18 @@ public class OpExam {
         num *= 2;   // num = num * 2  (24)
         num /= 4;   // num = num / 4  (6)
         num %= 4;   // num = num % 4  (2)
+
+        int i = 10;
+
+        System.out.println(i); // 10
+//        i++;
+////        ++i;
+//        System.out.println(i);
+
+
+//        System.out.println(i++); // i=i+1;
+//        System.out.println(i);
+        System.out.println(++i);  // i=i+1;
+        System.out.println(--i); // i=i-1;
     }
 }
