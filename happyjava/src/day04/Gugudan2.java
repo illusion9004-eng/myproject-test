@@ -11,9 +11,13 @@ public class Gugudan2 {
         }
 
 
-        for(int k = 1; k <= 9; k++) {
+       a: for(int k = 1; k <= 9; k++) {
             for (int i = 2; i <= 9; i++) {
+                if(i > 4){
+                    break a;
+                }
                 System.out.print(i + " * " + k + " = " + (k * i)+"\t");
+
             }
             System.out.println();
         }
