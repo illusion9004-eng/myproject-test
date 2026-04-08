@@ -28,8 +28,15 @@ public class Calculator {
 
         System.out.println(sumResult);
        Calculator.add(10,20,30);
-        System.out.println(Calculator.add(10));
+        System.out.println(Calculator.add(10,20));
         System.out.println(Calculator.add(10,20,30,40,50));
-        System.out.println(Calculator.add(10,2,43,5,7));
+        System.out.println(Calculator.add(10,2,43,5));
+
+
+        System.out.println('c');
+        System.out.println(10);
+        System.out.println("abc");
+        System.out.println(10.1);
+
     }
 }

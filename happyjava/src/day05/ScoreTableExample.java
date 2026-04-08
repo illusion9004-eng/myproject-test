@@ -36,6 +36,11 @@ public class ScoreTableExample {
             System.out.printf("%d\t%.1f\n%d%s", sum, avg,ii,name);
             System.out.printf("test");
             System.out.printf("%s",name);
+
+            Object[] objArr = new Object[3];
+            objArr[0] = 10;
+            objArr[1] = "abc";
+            objArr[2] = 'c';
         }
     }
 }
