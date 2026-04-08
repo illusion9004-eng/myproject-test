@@ -2,8 +2,15 @@ package day06;
 
 public class Dice {
     //속성 - 면(face), 눈(eye)
-    int face=6;
+    int face;
     int eye;
+
+    public Dice(){
+        face = 6;
+    }
+    public Dice(int face){
+        this.face = face;
+    }
 
     //행위 - 굴리다 (roll)
     public void roll(){
