@@ -26,6 +26,7 @@ public class Person {
 
     // this를 반환하는 메소드 (메소드 체이닝)
     public Person setAddress(String address) {
+//        String address;
         this.address = address;
         return this;  // 현재 객체를 반환
     }
@@ -36,7 +37,10 @@ public class Person {
 
         System.out.println(kang.name);
 
-        String name = kang.setAddress("강남구 논현동").getName();
+        Person kang1 = kang.setAddress("test");
+        String name = kang1.getName();
+
+        String name2 = kang.setAddress("강남구 논현동").getName();
         kang.introduce();
 
         kang.getName().toUpperCase().trim().length();
