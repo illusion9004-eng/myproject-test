@@ -25,7 +25,9 @@ class 나비 implements 나는것{
 }
 public class Exam04 {
     public static void main(String[] args) {
-        나는것 a = new 헬리콥터();
+        나는것 a = new 비행기();
+
+        //사용하는 코드
         a.날다();
 
     }
