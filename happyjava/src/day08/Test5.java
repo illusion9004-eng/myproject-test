@@ -5,6 +5,8 @@ abstract class Animal {
 
     abstract public void move() ;
 
+
+
     //추상 클래스에는 일반적인 필드 메서드 모두 포함 할 수 있어요.
 }
 class Pig extends Animal{

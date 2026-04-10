@@ -16,7 +16,7 @@ interface AB extends AA, BB{
 class ABTest implements AB{
     @Override
     public void zz() {
-        
+
     }
 
     @Override
