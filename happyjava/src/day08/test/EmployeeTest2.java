@@ -18,6 +18,6 @@ public class EmployeeTest2 extends Employee{
 
         EmployeeTest2 employeeTest2 = new EmployeeTest2();
         employeeTest2.department="";
-        
+
     }
 }
