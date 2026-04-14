@@ -1,5 +1,10 @@
 package day09;
-
+class RunImpl implements Runnable{
+    @Override
+    public void run() {
+        System.out.println("run 실행");
+    }
+}
 public class InnerClassTest {
     public static void main(String[] args) {
         OuterClass outer = new OuterClass();
@@ -22,7 +27,16 @@ public class InnerClassTest {
             }
         };
 
+        RunImpl runImpl = new RunImpl();
 
+        outer.test(runImpl);
+
+        outer.test(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("run 실행");
+            }
+        });
     }
 
 

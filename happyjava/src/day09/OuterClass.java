@@ -50,4 +50,8 @@ public class OuterClass {
         runnable.run();
         lambdaRunnable.run();
     }
+
+    public void test(Runnable runnable){
+
+    }
 }
