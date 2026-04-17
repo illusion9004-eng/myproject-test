@@ -95,4 +95,48 @@ SELECT
     from emp e, emp m 
     where e.mgr = m.empno;
 
-    
+select e.ename, d.dname 
+from emp e join dept d on e.deptno = d.deptno;
+
+select e.ename, d.dname 
+from emp e join dept d using(deptno);
+
+select e.ename, d.dname 
+from emp e natural join dept d ;
+
+select * from salgrade;
+
+select e.ename, e.sal, s.grade
+from emp e, salgrade s
+where e.sal between s.min_salary and s.max_salary;
+
+select * from emp;
+
+select e.ename, d.dname 
+from emp e join dept d on e.deptno = d.deptno;
+
+select e.ename, d.dname 
+from emp e join dept d on e.deptno = d.deptno;
+
+insert into dept values(50, '교육부', '서울');
+     
+     select e.ename, d.dname 
+from emp e left outer join dept d on e.deptno = d.deptno;
+
+     select e.ename, d.dname 
+from emp e right outer join dept d on e.deptno = d.deptno;
+
+
+     select e.ename, d.dname 
+from emp e left outer join dept d on e.deptno = d.deptno
+union
+     select e.ename, d.dname 
+from emp e right outer join dept d on e.deptno = d.deptno;
+
+
+select e.empno 사번, e.ename 사원명, e.mgr "매니저사번", m.ename "매니저 이름" 
+from emp e left outer join emp m on e.mgr = m.empno; 
+
+
+select e.empno 사번, e.ename 사원명, e.mgr "매니저사번", m.ename "매니저 이름" 
+from emp e join emp m on e.mgr = m.empno; 
