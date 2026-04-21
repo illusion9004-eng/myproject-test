@@ -68,3 +68,34 @@ insert into member(name,email,password) values
 
 update member set name='강둘리', email='kang22@gmail.com' 
 where id = 3;
+
+-- 삭제 
+delete from member where id = 2;
+
+-- 주문 (orders) 
+-- id, (누가? member_id) , totol_price, created_at )
+create table orders(
+id bigint auto_increment primary key,
+member_id bigint not null,
+total_price int not null,
+created_at datetime default current_timestamp,
+foreign key (member_id) references member(id) on delete cascade -- 부모가 삭제될 때 자식도 같이 삭제됨.
+-- foreign key (member_id) references member(id) on delete set null -- 부모가 삭제되면 자식 컬럼의 값을 null로 수정  
+);
+insert into orders (member_id,total_price) values(1,3500);
+insert into orders (member_id,total_price) values(3,6000);
+
+insert into orders (member_id,total_price) values(11,30000);
+select * from orders;
+
+select * from member;
+delete from orders where id = 2;
+delete from member where id = 4;  -- 포링키 제약  조건!!!  
+
+drop table orders;
+
+
+delete from member where id = 1;
+
+select * from 
+
