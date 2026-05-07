@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,6 +6,13 @@
     <style>
       a[title] {
         color: green;
+      }
+      [href] {
+        background-color: yellow;
+      }
+
+      [href*="google"] {
+        color: blue;
       }
     </style>
   </head>
@@ -29,12 +36,13 @@
         eiusmod tempor.
       </p>
       <p>
+        <a href="google">adipisicing</a>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor.
       </p>
       <p>
         Lorem ipsum dolor sit amet, consectetur
-        <a href="#">adipisicing</a> elit, sed do eiusmod tempor.
+        <a href="www.google.com">adipisicing</a> elit, sed do eiusmod tempor.
       </p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

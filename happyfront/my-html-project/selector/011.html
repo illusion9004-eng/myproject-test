@@ -1,12 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>CSS Selectors</title>
     <style>
-      a[href="http://net.tutsplus.com"]
-      {
+      a[href="http://net.tutsplus.com"] {
         color: #ff0000;
+      }
+
+      a[href$="com"] {
+        color: #ff00b3;
+      }
+      a[href^="http"] {
+        background-color: aqua;
       }
     </style>
   </head>

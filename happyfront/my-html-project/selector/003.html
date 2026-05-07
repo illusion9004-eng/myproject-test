@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,19 +7,25 @@
       .warning {
         color: red;
       }
+      .aa {
+        font-size: 20px;
+      }
+      .bb {
+        background-color: yellow;
+      }
     </style>
   </head>
   <body>
     <div id="container">
-      <p>My paragraph here.</p>
+      <p class="warning aa bb">My paragraph here.</p>
       <ul>
-        <li>List Item 1</li>
+        <li class="warning">List Item 1</li>
         <li>List Item 2</li>
       </ul>
 
       <ul>
         <li class="warning">Something went Wrong</li>
-        <li>List Item 4</li>
+        <li class="aa bb">List Item 4</li>
       </ul>
     </div>
   </body>
