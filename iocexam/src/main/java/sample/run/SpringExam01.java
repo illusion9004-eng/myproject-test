@@ -4,6 +4,7 @@ import org.example.iocexam.IocexamApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import sample.bean.Book;
+import sample.bean.Dice;
 import sample.bean.MyBean;
 import sample.config.MyBeanConfig;
 
@@ -63,5 +64,15 @@ public class SpringExam01 {
         else
             System.out.println("다르다");
 
+
+        Dice dice = context.getBean("dice",Dice.class);
+        System.out.println(dice.getNumber());
+
+
+        Dice dice2 = context.getBean("dice2",Dice.class);
+        System.out.println(dice2.getNumber());
+
+        Dice dice3 = context.getBean("dice3",Dice.class);
+        System.out.println(dice3.getNumber());
     }
 }
