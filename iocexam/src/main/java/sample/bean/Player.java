@@ -1,5 +1,7 @@
 package sample.bean;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Player {
     private String name;
     private Dice dice;   //실행될 때 주사위를 주입 (DI)
