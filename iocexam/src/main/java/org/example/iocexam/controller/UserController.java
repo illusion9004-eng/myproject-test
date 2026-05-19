@@ -2,7 +2,9 @@ package org.example.iocexam.controller;
 
 import org.example.iocexam.domain.User;
 import org.example.iocexam.service.UserService;
+import org.springframework.stereotype.Component;
 
+@Component
 public class UserController {
     private UserService userService;
 

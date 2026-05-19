@@ -1,6 +1,7 @@
 package org.example.iocexam.config;
 
 import org.example.iocexam.controller.UserController;
+import org.example.iocexam.dao.UserCaramiDaoImpl;
 import org.example.iocexam.dao.UserDao;
 import org.example.iocexam.dao.UserDaoImpl;
 import org.example.iocexam.service.UserService;
@@ -9,18 +10,22 @@ import org.springframework.context.annotation.Bean;
 
 public class UserConfig {
 //    여기에 빈을 등록해주세요.
-    @Bean
-    public UserDao userDao(){
-        return new UserDaoImpl();
-    }
-
-    @Bean
-    public UserService userService(UserDao userDao){
-        return new UserServiceImpl(userDao);
-    }
-
-    @Bean
-    public UserController userController(UserService userService){
-        return new UserController(userService);
-    }
+//    @Bean
+//    public UserDao userDao(){
+//        return new UserDaoImpl();
+//    }
+//
+//    @Bean
+//    public UserDao userDao2(){
+//        return new UserCaramiDaoImpl();
+//    }
+//    @Bean
+//    public UserService userService(UserDao userDao2){
+//        return new UserServiceImpl(userDao2);
+//    }
+//
+//    @Bean
+//    public UserController userController(UserService userService){
+//        return new UserController(userService);
+//    }
 }
